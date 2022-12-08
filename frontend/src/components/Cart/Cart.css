@@ -1,0 +1,96 @@
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+.centerDiv{
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.centerDiv>svg{
+    color: tomato;
+    font-size: 7rem;
+}
+.centerDiv>a{
+    text-decoration: none;
+    outline: none;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+    transition: all .2s ease-in-out;
+}
+.centerDiv>a:hover{
+    color: tomato;
+}
+.centerDiv>p{
+    font: 2rem sans-serif;
+    margin: 2rem 0;
+    border-bottom: 1px solid grey;
+    padding: 2rem;
+}
+.detailsRow{
+    display: flex;
+}
+.column>p{
+    margin-top: 13px;
+    text-align: center;
+    color: white;
+}
+.removebtn{
+    padding: 1vmax;
+    transition: all .2s ease-in-out;
+    background-color: none;
+    border: none;
+}
+.removebtn:hover{
+    background-color: tomato;
+    border-radius: 6px;
+}
+.subTotal{
+    border: 7px solid grey;
+    border-radius: 10px;
+    padding: 1rem ;
+    margin-top: 3rem;
+    width: 30vw;
+    float: right;
+    margin-bottom: 3rem;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    font-size:2vmax;
+
+}
+.total>p{
+    padding: 1rem;
+    background-color: tomato;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.button{
+float: right;
+}
+.button>button{
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+.button>button:hover{
+background-color: tomato;
+}
+@media  screen and (max-width:900px){
+    .subTotal{
+        width: 70vw;
+    }
+}
+@media screen and(max-width:375px){
+    .prodDescription{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

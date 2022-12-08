@@ -1,0 +1,127 @@
+.userDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.userDetails>h1{
+    font-size: 2rem;
+    border-bottom: 3px solid grey;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    background-color: tomato;
+    color: black;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 1rem ;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+
+}
+.userDetails>p{
+    font-size: 1.3rem;
+    border-bottom: 1px solid grey;
+    padding-bottom: .7rem;
+}
+.userDetails>p>span{
+    font-size:1.5rem ;
+    font-weight: 500;
+}
+.pDetails>h1{
+text-align: center;
+border-bottom: 2px solid grey;
+padding-bottom: 1rem;
+margin-bottom: 1rem;
+background-color: tomato;
+color: black;
+border-bottom-left-radius: 1em;
+border-top-right-radius: 1em;
+padding: 1rem ;
+box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+.prod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.prod>div>span{
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+}
+.OrderSummary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-left: 3px solid black;
+}
+.OrderSummary>h1{
+box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+color: black;
+    padding: 1rem 0;
+    background-color: tomato;
+    padding: 1rem;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.OrderSummary>div{
+    margin-top: 2vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.OrderSummary>div>p{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.OrderSummary>div>span{
+    font-size: 2vmax;
+}
+.OrderSummary>div:last-child>button{
+padding: 1rem 2rem;
+color: white;
+background: black;
+font-size: 1.4rem;
+font-weight: 300;
+transition: all .2s ease-in-out;
+border: none;
+}
+.OrderSummary>div:last-child>button:hover{
+    background-color: tomato;
+    color: white;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+.OrderSummary>div:last-child>button:active{
+    transform: translateY(1em);
+}
+@media screen and (max-width:600px){
+    .OrderSummary{
+        border: none;
+    }
+    .OrderSummary>div>span{
+        font-size: 4vmax;
+    }
+    .OrderSummary>div>p{
+        border-bottom: 2px solid black;
+        padding-bottom: 1rem;
+        font-size: 3vmax;
+        border-bottom-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+    .prod>div>img{
+       width: 158px;
+    }
+}
+@media screen and (max-width:768px) {
+    .OrderSummary{
+        border: none;
+    }
+}

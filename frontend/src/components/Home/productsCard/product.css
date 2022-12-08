@@ -1,0 +1,38 @@
+/*importing all fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');/* css rules to apply */
+/*
+font-family: 'Cabin', sans-serif;
+font-family: 'Roboto', sans-serif; */
+.MainProductContainer{
+    width: 50%;
+}
+
+.product{
+
+    font-family:'Cabin', sans-serif;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.product:hover{
+    transform: translateY(-1vmax);
+}
+.cart-btn{
+    transition: all .2s ease-in-out;
+}
+.cart-btn:hover{
+transform: scale(.9);
+}
+.cart-btn:active{
+    transform: translateY(5%);
+}
+a{
+    text-decoration: none;
+}
+.image{
+    position: relative;
+}
+.badge{
+    position: absolute;
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div{
+width: 100vw;
+height: 100vh;
+display: grid;
+place-items: center;
+}
+.center-div{
+    width: 15rem;
+    height: 15rem;
+    border-right: .3rem solid black;
+    border-radius: 50%;
+    animation: rot .5s linear infinite;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

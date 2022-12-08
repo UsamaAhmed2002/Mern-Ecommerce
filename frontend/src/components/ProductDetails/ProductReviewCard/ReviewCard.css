@@ -1,0 +1,29 @@
+.reviewDetails{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+}
+.profileIcon>img{
+    border-radius: 50%;
+    margin: 0 5vmax;
+}
+.name{
+    font-size: 3vmax;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+}
+.comments{
+    font-size: 1.5vmax;
+    padding: 2vmax 5vmax;
+    text-align: justify;
+    border-bottom: 1px solid grey;
+    margin-bottom: 2vmax;
+    font-style: oblique;
+}
+.noReview{
+border-bottom: 1px solid grey;
+width:  auto;
+text-align: center;
+align-items: center;
+}

@@ -1,0 +1,88 @@
+/*importing all fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster+Two:ital@0;1&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu+Mono:wght@400;700&display=swap');
+/* css rules to apply */
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu Mono', monospace; */
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ background: tomato;}
+.navlink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    padding: 10px;
+    font-family: 'Lobster Two',' cursive';
+    font-size: 30px;
+
+}
+.navbar-brand{
+    border-radius: 10px;
+    background-color:lightseagreen;
+    padding: 10px;
+    background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.icons{
+    margin: 0 40px;
+}
+.carticon{
+    margin: 0 10px;
+}
+.profileicon{
+    margin: 0 10px;
+
+}
+.nav-item{
+    font-family: 'Lobster Two',' cursive';
+    margin: 0 20px;
+    font-size: 25px; 
+}
+.nav-item:hover{
+border-radius: 15px;
+}
+.form-control{
+    border-radius: 20px;   
+}
+.sticky {
+    background:white;
+    position: fixed;
+    width: 100vmax;
+    z-index: 1;
+    transition: all 1s;
+}
+.fadein{
+    animation: fadein 1s ease 0s 1 normal forwards;
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.searchbtn{
+    background: none;
+    margin: 1vmax;
+    border: none;
+    font-size: 1.4vmax;
+    transition: all .1s ease-in;
+}
+.searchbtn:hover{
+    color: white;
+}
+.searchinput{
+width: 20vmax;
+border: none;
+outline: none;
+}
+

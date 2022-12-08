@@ -1,0 +1,56 @@
+.userDetails{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly
+}
+.detailsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.detailsBox>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vmax 0;
+}
+.detailsBox>div>h1{
+    font-size: 3vmax;
+    margin: 1vmax;
+    padding: 2vmax ;
+    background-color: tomato;
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+}
+.detailsBox>div>p{
+    font-size: 2vmax;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.editProfileBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.editProfileBox>button{
+    margin: 2vmax 1vmax;
+    padding: 1.5vmax 4vmax;
+    border: none;
+    font-size: 1.6vmax;
+    transition: all .2s ease-in-out
+}
+.editProfileBox>button:hover{
+background-color: tomato;
+border-radius: 10px;
+color: white;
+}
+@media screen and (max-width:577px){
+
+}

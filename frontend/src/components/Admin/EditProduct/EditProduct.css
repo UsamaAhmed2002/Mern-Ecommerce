@@ -1,0 +1,150 @@
+.createProdMainContainer {
+	width: 100%;
+}
+.createProdMainContainer > button {
+	background: transparent;
+	border: none;
+	transition: all 0.4s ease;
+	position: absolute;
+	z-index: 99;
+}
+.createProdMainContainer > button > svg {
+	opacity: 0.5;
+	font-size: 3em;
+	z-index: 99;
+	transition: all 0.3s ease;
+}
+.createProdMainContainer > button > svg:hover {
+	color: tomato;
+	opacity: 1;
+	transform: scale(1.3);
+	transform: translateX(5px);
+}
+.createProdMainContainer > .sideBar {
+	width: 400px;
+	z-index: 98;
+	position: absolute;
+	transition: all 2s ease;
+	transform: translateX(-100%);
+}
+.createProdMainContainer > .showSideBar {
+	transform: translateX(0);
+}
+.createProdMainContainer > .mainFormContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.createProdMainContainer > .mainFormContainer > form > h1 {
+	text-align: center;
+	margin-top: 1em;
+	padding: 2em;
+	color: white;
+	background-color: tomato;
+	border-radius: 0% 100% 100% 0% / 100% 52% 48% 0%;
+}
+.createProdMainContainer > .mainFormContainer > form {
+	width: 70%;
+	height: 90%;
+}
+.createProdMainContainer > .mainFormContainer > form > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1em;
+	align-items: center;
+}
+.createProdMainContainer > .mainFormContainer > form > div > input,
+.createProdMainContainer > .mainFormContainer > form > div > textarea,
+.createProdMainContainer > .mainFormContainer > form > div > select {
+	padding: 10px 5em;
+	border: 1px solid black;
+	outline: none;
+	transition: all 0.3s ease;
+}
+.createProdMainContainer > .mainFormContainer > form > div > input:focus,
+.createProdMainContainer > .mainFormContainer > form > div > textarea:focus,
+.createProdMainContainer > .mainFormContainer > form > div > select:focus {
+	border: 4px solid tomato;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(7, 7, 7, 0.582);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 255, 242 0.75);
+}
+.fileBox > input {
+	padding: 0 1vmax;
+	border: none;
+	border: none;
+	outline: none;
+}
+.fileBox > input::-webkit-file-upload-button {
+	cursor: pointer;
+	width: 100%;
+	z-index: 2;
+	height: 5vh;
+	border: none;
+	margin: 0%;
+	font: 400 1vmax cursive;
+	transition: all 0.5s;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+.createProdMainContainer > .mainFormContainer > form > .imgBox {
+	width: 100%;
+	height: 200px;
+	margin: 2em 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2em;
+	overflow-x: auto;
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(7, 7, 7, 0.582);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 255, 242 0.75);
+}
+.createProdMainContainer > .mainFormContainer > form > .imgBox > img {
+	width: 10em;
+	height: 10em;
+	margin: 0 1em;
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.582);
+	-moz-box-shadow: 5px 5px 15px rgba(0, 255, 242 0.75);
+}
+.createProdMainContainer > .mainFormContainer > form > .SubmitBtn {
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+.createProdMainContainer > .mainFormContainer > form > .SubmitBtn > button {
+	width: 30%;
+	height: 3em;
+	transition: all 0.3s ease;
+	background: black;
+	color: white;
+	font-size: 1.3em;
+	font-weight: 100;
+}
+.createProdMainContainer
+	> .mainFormContainer
+	> form
+	> .SubmitBtn
+	> button:hover {
+	background-color: tomato;
+	border: none;
+	outline: none;
+	transform: scale(1.1);
+}
+.createProdMainContainer
+	> .mainFormContainer
+	> form
+	> .SubmitBtn
+	> button:active {
+	transform: translateY(3px);
+}
+.createProdMainContainer > .mainFormContainer > form > div > span {
+	color: red;
+}

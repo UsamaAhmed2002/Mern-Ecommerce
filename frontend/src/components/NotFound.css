@@ -1,0 +1,11 @@
+.NotFoundPageContainer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.NotFoundPageContainer>div>h1{
+    border-bottom: 1px solid black;
+    font-size: 3em;
+    padding: 2em ;
+}

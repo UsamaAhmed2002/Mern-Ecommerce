@@ -1,0 +1,36 @@
+.successMainContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.successContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100%;
+}
+.successContainer>svg{
+    font-size: 4em;
+    color: green;
+    margin-bottom: 1em;
+}
+.successContainer>h1{
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+.successContainer>a{
+    font-size: 2em;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+.successContainer>a:hover{
+    background-color: tomato;
+    transform: translateY(2px);
+}

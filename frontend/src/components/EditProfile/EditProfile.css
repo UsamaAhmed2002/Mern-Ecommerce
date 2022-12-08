@@ -1,0 +1,41 @@
+.mainContainer{
+    display: grid;
+    place-items: center;
+    
+}
+.mainContainer>h1{
+    margin: 1vmax 0;
+    padding: 2vmax 0;
+    border-bottom: 3px solid grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.inputBoxes{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputBoxes>input{
+    width: 80%;
+    padding: 1.5vmax 2vmax;
+    border: 1px solid grey;
+    font-size: 2vmax;
+}
+.updatebtn{
+    width: 50%;
+    padding: 1vmax ;
+    border-radius: 2vmax;
+    border: 1px solid white;
+    transition: all .3s ease-in-out;
+    font-size: large;
+}
+.updatebtn:hover{
+    background-color: tomato;
+    color: white;
+border:  none;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

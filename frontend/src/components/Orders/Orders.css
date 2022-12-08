@@ -1,0 +1,55 @@
+.OrderDetailsPageConatainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.OrderDetailsPageConatainer>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+.OrderDetailsPageConatainer>div>h1{
+background-color: tomato;
+color: white;
+padding: 1rem 2em;
+box-shadow: 2px 10px 5px rgba(0,0,0,.6);
+}
+.OrderDetailsPageConatainer>div>p{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.OrderItems{
+    width: 100%;
+}
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 1em;
+}
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: rgba(10, 195, 228, 0.411);
+}
+.cartItem>p{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.orderStatus>em{
+    font-size: 2em;
+    font-weight: 700;
+    margin: 2em 0;
+    text-transform: uppercase;
+}

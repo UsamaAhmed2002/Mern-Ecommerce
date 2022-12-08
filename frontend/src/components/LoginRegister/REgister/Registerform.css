@@ -1,0 +1,29 @@
+
+.inputBoxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inputBoxes>input{
+    width: 80%;
+    padding: 1.5vmax 2vmax;
+    border: 1px solid grey;
+    font-size: 1vmax;
+}
+.registerbtn{
+    width: 50%;
+    padding: 1vmax ;
+    border-radius: 2vmax;
+    border: 1px solid white;
+    transition: all .3s ease-in-out;
+    font-size: large;
+}
+.registerbtn:hover{
+    background-color: tomato;
+    color: white;
+border:  none;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

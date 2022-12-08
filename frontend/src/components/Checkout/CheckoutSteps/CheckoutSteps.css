@@ -1,0 +1,12 @@
+
+.MuiStepConnector-root{
+    height: 4px;
+}
+.Mui-completed{
+    color: tomato;
+}
+.MuiStepConnector-active,
+.MuiStepConnector-completed
+{
+background-color: tomato;
+}
