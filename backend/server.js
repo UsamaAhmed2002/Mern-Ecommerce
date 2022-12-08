@@ -10,7 +10,7 @@ process.on("uncaughtException", (e) => {
 	process.exit(1);
 });
 
-if (process.env.NODE_ENV === "PRODUCTION") {
+if (process.env.nodenv === "PRODUCTION") {
 } else {
 	//config
 	dotenv.config({ path: `${__dirname}/config/config.env` });
@@ -27,8 +27,8 @@ cloudinary.config({
 });
 
 //server starter
-const server = app.listen(process.env.PORT, () => {
-	console.log(`Server is working on http://localhost:${process.env.PORT}`);
+const server = app.listen(process.env.port, () => {
+	console.log(`Server is working on http://localhost:${process.env.port}`);
 });
 
 // Unhandled Promise REjection

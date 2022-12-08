@@ -1,5 +1,5 @@
 const asyncErrorHandler = require("./../middleware/asyncErrorHandler");
-const stripe = require("stripe")(process.env.STRIPE_PASS);
+const stripe = require("stripe")(process.env.stripepss);
 exports.processPayment = asyncErrorHandler(async (req, res, next) => {
 	const mypayment = await stripe.paymentIntents.create({
 		amount: req.body.amount,
@@ -18,6 +18,6 @@ exports.processPayment = asyncErrorHandler(async (req, res, next) => {
 exports.sendStripeApiKey = asyncErrorHandler(async (req, res, next) => {
 	res.status(200).json({
 		success: true,
-		stripeApiKey: process.env.STRIPE_API_KEY,
+		stripeApiKey: process.env.stripeapikey,
 	});
 });

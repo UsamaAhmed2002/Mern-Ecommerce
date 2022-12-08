@@ -8,7 +8,7 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 //config for  env file
-if (process.env.NODE_ENV === "PRODUCTION") {
+if (process.env.nodenv === "PRODUCTION") {
 } else {
 	dotenv.config({ path: `${__dirname}/config/config.env` });
 }

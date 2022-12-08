@@ -53,8 +53,8 @@ userSchema.pre("save", async function (next) {
 });
 //creating a jwt token for the user
 userSchema.methods.getJWTToken = function () {
-	return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
-		expiresIn: process.env.JWT_EXPIRE,
+	return jwt.sign({ id: this._id }, process.env.jwtsecret, {
+		expiresIn: process.env.jwtexpire,
 	});
 };
 //matching password for logging in user
