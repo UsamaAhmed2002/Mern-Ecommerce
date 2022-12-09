@@ -8,7 +8,7 @@ exports.isAuthenticated = asyncErrorHandler(async (req, res, next) => {
 	const { token } = req.cookies;
 	if (!token) return next(new ErrorHandler("plz log in first ", 400));
 	//verifying the given token matches the jwt stored token
-	const decodedData = jwt.verify(token, process.env.JWT_SECRET);
+	const decodedData = jwt.verify(token, process.env.jwtsecret);
 	req.user = await userModel.findById(decodedData.id);
 	next();
 });
