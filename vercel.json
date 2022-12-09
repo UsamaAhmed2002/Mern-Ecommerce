@@ -1,3 +1,4 @@
 {
-	"outputDirectory": "./backend/server.js"
+	"outputDirectory": "./backend/server.js",
+	"buildCommand": "npm run build"
 }
