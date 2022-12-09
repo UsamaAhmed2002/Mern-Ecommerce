@@ -10,11 +10,7 @@ process.on("uncaughtException", (e) => {
 	process.exit(1);
 });
 
-if (process.env.nodenv === "PRODUCTION") {
-} else {
-	//config
-	dotenv.config({ path: `${__dirname}/config/config.env` });
-}
+dotenv.config({ path: `${__dirname}/config/config.env` });
 
 //connecting to database
 connectDatabase();

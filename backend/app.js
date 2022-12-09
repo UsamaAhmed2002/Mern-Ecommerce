@@ -8,10 +8,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 //config for  env file
-if (process.env.nodenv === "PRODUCTION") {
-} else {
-	dotenv.config({ path: `${__dirname}/config/config.env` });
-}
+
+dotenv.config({ path: `${__dirname}/config/config.env` });
+
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ limit: "50mb" }));
